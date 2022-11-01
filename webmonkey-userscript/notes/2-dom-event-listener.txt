@@ -1,0 +1,22 @@
+--------------------------------------------------------------------------------
+
+https://www.raiplay.it/assets/js/webcomponents/rai-episodes.js
+
+_cardClicked(t){document.body.className.includes("rai-player-opened")||t.preventDefault(),Object(o.c)(t)}
+
+--------------------------------------------------------------------------------
+
+summary:
+========
+
+document.querySelector('body > main > rai-episodes').addEventListener('click', _cardClicked)
+
+notes:
+======
+
+* if the <body> tag doesn't have the class: "rai-player-opened"
+  then mouse clicks on all <a> tags inside of <rai-episodes> are ignored
+
+* such anchor tags include all episodes of any selected TV series
+
+--------------------------------------------------------------------------------

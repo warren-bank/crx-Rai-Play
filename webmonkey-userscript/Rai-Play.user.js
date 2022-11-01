@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Rai Play
 // @description  Watch videos in external player.
-// @version      1.0.0
-// @include      /^https?:\/\/(?:[^\.\/]*\.)*raiplay\.it\/video\/.+$/
+// @version      1.0.1
+// @include      /^https?:\/\/(?:[^\.\/]*\.)*raiplay\.it\/.*$/
 // @icon         https://www.raiplay.it/dl/components/img/logo-app.png
 // @run-at       document-end
 // @grant        unsafeWindow
@@ -239,6 +239,58 @@ var get_video_url = function() {
 
 // ----------------------------------------------------------------------------- bootstrap
 
-process_video_url(
-  get_video_url()
-)
+var init = function() {
+  // on page load
+  if (is_video_page(unsafeWindow.location.href)) {
+    process_video_url(
+      get_video_url()
+    )
+  }
+
+  if (unsafeWindow.history) {
+    var real = {
+      pushState:    unsafeWindow.history.pushState,
+      replaceState: unsafeWindow.history.replaceState
+    }
+
+    unsafeWindow.history.pushState = function(state, title, url) {
+      process_site_url(url)
+      real.pushState.apply(unsafeWindow.history, [state, title, url])
+    }
+
+    unsafeWindow.history.replaceState = function(state, title, url) {
+      process_site_url(url)
+      real.replaceState.apply(unsafeWindow.history, [state, title, url])
+    }
+  }
+
+  unsafeWindow.document.body.classList.add("rai-player-opened")
+}
+
+var is_video_page = function(url) {
+  var url_regex = /^https?:\/\/(?:[^\.\/]*\.)*raiplay\.it\/video\/.+$/
+
+  return url_regex.test(url)
+}
+
+var process_site_url = function(url) {
+  url = resolve_url(url)
+
+  if (is_video_page(url))
+    redirect_to_url(url)
+}
+
+var resolve_url = function(url) {
+  if (url.substring(0, 4).toLowerCase() === 'http')
+    return url
+
+  if (url.substring(0, 2) === '//')
+    return unsafeWindow.location.protocol + url
+
+  if (url.substring(0, 1) === '/')
+    return unsafeWindow.location.protocol + '//' + unsafeWindow.location.host + url
+
+  return unsafeWindow.location.protocol + '//' + unsafeWindow.location.host + unsafeWindow.location.pathname.replace(/[^\/]+$/, '') + url
+}
+
+init()
