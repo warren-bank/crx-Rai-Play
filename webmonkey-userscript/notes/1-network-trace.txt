@@ -1,0 +1,143 @@
+--------------------------------------------------------------------------------
+
+https://www.raiplay.it/programmi/ilcommissariorex
+  series: Kommissar Rex
+
+https://www.raiplay.it/video/2018/07/Il-Commissario-Rex-S1E1---Capolinea-Vienna-1-parte-24e00c3e-f011-47a0-8934-00bf14c69a11.html
+
+----------------------------------------
+
+view-source:https://www.raiplay.it/video/2018/07/Il-Commissario-Rex-S1E1---Capolinea-Vienna-1-parte-24e00c3e-f011-47a0-8934-00bf14c69a11.html
+
+<script type="application/ld+json">
+{
+    "@context": ["http://schema.org", {
+        "@language": "it"
+    }],
+    "@id": "https://www.raiplay.it/video/2018/07/Il-Commissario-Rex-S1E1---Capolinea-Vienna-1-parte-24e00c3e-f011-47a0-8934-00bf14c69a11.html",
+    "url": "https://www.raiplay.it/video/2018/07/Il-Commissario-Rex-S1E1---Capolinea-Vienna-1-parte-24e00c3e-f011-47a0-8934-00bf14c69a11.html",
+    "description": "Richard Moser, un commissario della squadra omicidi di Vienna, interviene alla Haas Haus per calmare un pazzo che ha fatto esplodere una bomba che ha ucciso il proprietario di Rex, un cane poliziotto. Rex, se non si abituerà all'idea di un nuovo padrone, verrà soppresso, ma Richard non riesce a convivere con il pensiero della morte del cane",
+    "potentialAction": {
+        "@type": "WatchAction",
+        "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://www.raiplay.it/video/2018/07/Il-Commissario-Rex-S1E1---Capolinea-Vienna-1-parte-24e00c3e-f011-47a0-8934-00bf14c69a11.html",
+            "actionPlatform": ["http://schema.org/DesktopWebPlatform", "http://schema.org/MobileWebPlatform"]
+        },
+        "actionAccessibilityRequirement": {
+            "@type": "ActionAccessSpecification",
+            "category": "free",
+            "availabilityStarts": "2018-07-05T00:00:00.000",
+            "availabilityEnds": "2023-01-31T22:59:27+0000",
+            "eligibleRegion": {
+                "@type": "Country",
+                "name": "IT"
+            }
+        }
+    },
+    "releasedEvent": {
+        "@type": "PublicationEvent",
+        "startDate": "2018-07-05",
+        "location": {
+            "@type": "Country",
+            "name": "IT"
+        }
+    },
+    "@type": "VideoObject",
+    "contentUrl": "https://mediapolisvod.rai.it/relinker/relinkerServlet.htm?cont=zmn8A94zvs0eeqqEEqual",
+    "duration": "PT0H43M40S",
+    "uploadDate": "2018-07-05T00:00:00.000",
+    "image": "https://www.raiplay.it/cropgd/1080x720/dl/img/2018/10/09/1539091743511_S1E1a.jpg",
+    "thumbnailUrl": "https://www.raiplay.it/cropgd/640x360/dl/img/2018/10/09/1539091743511_S1E1a.jpg",
+    "name": "Capolinea Vienna (1° parte)",
+    "actor": [{
+        "@type": "Person",
+        "name": "Rhett Butler"
+    }, {
+        "@type": "Person",
+        "name": "Gedeon Burkhard"
+    }, {
+        "@type": "Person",
+        "name": "Alexander Pschill"
+    }]
+}
+</script>
+
+summary:
+========
+* data["@type"] === "VideoObject"
+* data.contentUrl === "https://mediapolisvod.rai.it/relinker/relinkerServlet.htm?cont=zmn8A94zvs0eeqqEEqual"
+
+--------------------------------------------------------------------------------
+# with VPN in Italy
+
+curl -I "https://mediapolisvod.rai.it/relinker/relinkerServlet.htm?cont=zmn8A94zvs0eeqqEEqual"
+
+HTTP/1.1 302 Moved Temporarily
+Location: https://b70cb04c54ab478189e9d8ee45637b13.msvdn.net/dom6/podcastcdn/raitre/Rex/9060366_,800,1800,.mp4.csmil/playlist.m3u8?auth=daEcmcwbKbmaPcackdkb4dEdsaAaBdAcAcL-bJyps.-c0-CltvxFp&aifp=V001
+
+----------------------------------------
+# with VPN in Italy
+
+curl -I "https://b70cb04c54ab478189e9d8ee45637b13.msvdn.net/dom6/podcastcdn/raitre/Rex/9060366_,800,1800,.mp4.csmil/playlist.m3u8?auth=daEcmcwbKbmaPcackdkb4dEdsaAaBdAcAcL-bJyps.-c0-CltvxFp&aifp=V001"
+
+HTTP/1.1 302 Moved Temporarily
+Access-Control-Allow-Origin: *
+Content-Type: application/vnd.apple.mpegurl
+Location: https://StreamCdnR13-b70cb04c54ab478189e9d8ee45637b13.msvdn.net/dom6/podcastcdn/raitre/Rex/9060366_,800,1800,.mp4.csmil/playlist.m3u8?auth=daEcmcwbKbmaPcackdkb4dEdsaAaBdAcAcL-bJyps.-c0-CltvxFp&aifp=V001
+
+----------------------------------------
+# with VPN in Italy
+
+curl -I "https://StreamCdnR13-b70cb04c54ab478189e9d8ee45637b13.msvdn.net/dom6/podcastcdn/raitre/Rex/9060366_,800,1800,.mp4.csmil/playlist.m3u8?auth=daEcmcwbKbmaPcackdkb4dEdsaAaBdAcAcL-bJyps.-c0-CltvxFp&aifp=V001"
+
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Type: application/vnd.apple.mpegurl
+
+--------------------------------------------------------------------------------
+# without VPN, from outside of Italy
+
+curl -I "https://mediapolisvod.rai.it/relinker/relinkerServlet.htm?cont=zmn8A94zvs0eeqqEEqual"
+
+HTTP/1.1 302 Moved Temporarily
+Location: https://download-rai-it.akamaized.net/video_no_available.mp4
+
+summary:
+========
+* the value of this redirect is conditional on geography
+  - when requested from outside of Italy,
+    the URL is redirected to a static mp4 video file,
+    which is 15 second in length,
+    and informs the viewer that the video can only be accessed from within Italy
+
+----------------------------------------
+# without VPN, from outside of Italy
+
+curl -I "https://b70cb04c54ab478189e9d8ee45637b13.msvdn.net/dom6/podcastcdn/raitre/Rex/9060366_,800,1800,.mp4.csmil/playlist.m3u8?auth=daEcmcwbKbmaPcackdkb4dEdsaAaBdAcAcL-bJyps.-c0-CltvxFp&aifp=V001"
+
+HTTP/1.1 302 Moved Temporarily
+Access-Control-Allow-Origin: *
+Content-Type: application/vnd.apple.mpegurl
+Location: https://StreamCdnR13-b70cb04c54ab478189e9d8ee45637b13.msvdn.net/dom6/podcastcdn/raitre/Rex/9060366_,800,1800,.mp4.csmil/playlist.m3u8?auth=daEcmcwbKbmaPcackdkb4dEdsaAaBdAcAcL-bJyps.-c0-CltvxFp&aifp=V001
+
+summary:
+========
+* the URL for the HLS stream that is obtained from the earlier redirect when the request is made from within Italy
+  can be requested (and successfully played) from outside of Italy
+
+----------------------------------------
+# without VPN, from outside of Italy
+
+curl -I "https://StreamCdnR13-b70cb04c54ab478189e9d8ee45637b13.msvdn.net/dom6/podcastcdn/raitre/Rex/9060366_,800,1800,.mp4.csmil/playlist.m3u8?auth=daEcmcwbKbmaPcackdkb4dEdsaAaBdAcAcL-bJyps.-c0-CltvxFp&aifp=V001"
+
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Type: application/vnd.apple.mpegurl
+
+summary:
+========
+* the URL for the HLS stream that is obtained from the earlier redirect when the request is made from within Italy
+  can be requested (and successfully played) from outside of Italy
+
+--------------------------------------------------------------------------------
